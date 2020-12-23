@@ -17,8 +17,8 @@ public class DemomanController : MonoBehaviour
         Debug.Log(rigControl.transform.GetChild(3));
         Debug.Log(rigControl.transform.GetChild(3).position);
         rigControl.transform.GetChild(2).position += new Vector3(0, 0, 0.01f);
-        rigControl.transform.GetChild(3).position += new Vector3(0, 0, 0.01f);
-        rigControl.transform.GetChild(4).position += new Vector3(0, 0.01f, 0);
-        rigControl.transform.GetChild(5).position += new Vector3(0, 0.01f, 0);
+        rigControl.transform.GetChild(3).position += new Vector3(0, 0, -0.01f);
+        rigControl.transform.GetChild(4).position += new Vector3(-0.01f, 0, 0);
+        rigControl.transform.GetChild(5).position += new Vector3(+0.01f, 0, 0);
     }
 }
