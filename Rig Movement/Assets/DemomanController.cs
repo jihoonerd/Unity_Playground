@@ -5,6 +5,11 @@ using UnityEngine;
 public class DemomanController : MonoBehaviour
 {
     public GameObject rigControl;
+    public Vector3 leftFootChange;
+    public Vector3 rightFootChange;
+    public Vector3 leftHandChange;
+    public Vector3 rightHandChange;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,11 +19,9 @@ public class DemomanController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(rigControl.transform.GetChild(3));
-        Debug.Log(rigControl.transform.GetChild(3).position);
-        rigControl.transform.GetChild(2).position += new Vector3(0, 0, 0.01f);
-        rigControl.transform.GetChild(3).position += new Vector3(0, 0, -0.01f);
-        rigControl.transform.GetChild(4).position += new Vector3(-0.01f, 0, 0);
-        rigControl.transform.GetChild(5).position += new Vector3(+0.01f, 0, 0);
+        rigControl.transform.GetChild(2).position += leftFootChange;
+        rigControl.transform.GetChild(3).position += rightFootChange;
+        rigControl.transform.GetChild(4).position += leftHandChange;
+        rigControl.transform.GetChild(5).position += rightHandChange;
     }
 }
