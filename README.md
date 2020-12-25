@@ -1,4 +1,4 @@
-# Unity_Playground
+# Unity Playground
 
 ## Examples
 
@@ -10,3 +10,4 @@
 |Programmer Pathway - Prototype 1 (Challenge)|![propath_proto1_plane](assets/propath_proto1_plane.gif)|
 |Programmer Pathway - Prototype 2|![propath_proto2_feed](assets/propath_proto2_feed.gif)|
 |Programmer Pathway - Prototype 2 (Challenge)|![propath_proto2_fetch](assets/propath_proto2_fetch.gif)|
+|Mod the Cube|![mod_the_cube](assets/mod_the_cube.gif)|
