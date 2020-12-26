@@ -11,4 +11,5 @@
 |Programmer Pathway - Prototype 2|![propath_proto2_feed](assets/propath_proto2_feed.gif)|
 |Programmer Pathway - Prototype 2 (Challenge)|![propath_proto2_fetch](assets/propath_proto2_fetch.gif)|
 |Programmer Pathway - Prototype 3|![propath_proto3_jump](assets/propath_proto3_jump.gif)|
+|Programmer Pathway - Prototype 3 (Challenge)|![propath_proto3_balloon](assets/propath_proto3_balloon.gif)|
 |Mod the Cube|![mod_the_cube](assets/mod_the_cube.gif)|
