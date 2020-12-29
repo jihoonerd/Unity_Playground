@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
             hasPowerup = true;
             Destroy(other.gameObject);
             powerupIndicator.gameObject.SetActive(true);
+            StartCoroutine(PowerupCountdownRoutine());
         }
     }
 
@@ -39,12 +40,11 @@ public class PlayerController : MonoBehaviour
             Vector3 awayFromPlayer = (collision.gameObject.transform.position - transform.position);
             Debug.Log("Player collided with " + collision.gameObject.name + " with powerup set to " + hasPowerup);
             enemyRigidbody.AddForce(awayFromPlayer * powerupStrength, ForceMode.Impulse);
-            StartCoroutine(PowerupCountdownRoutine());
         }
     }
 
     IEnumerator PowerupCountdownRoutine(){
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSecondsRealtime(5);
         hasPowerup = false;
         powerupIndicator.gameObject.SetActive(false);
     }
