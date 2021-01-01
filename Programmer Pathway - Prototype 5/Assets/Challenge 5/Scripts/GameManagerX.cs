@@ -8,20 +8,22 @@ using UnityEngine.UI;
 public class GameManagerX : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI timerText;
     public TextMeshProUGUI gameOverText;
     public GameObject titleScreen;
-    public Button restartButton; 
+    public Button restartButton;
 
     public List<GameObject> targetPrefabs;
 
     private int score;
     private float spawnRate = 1.5f;
     public bool isGameActive;
+    public float timeLeft = 10.0f;
 
-    private float spaceBetweenSquares = 2.5f; 
+    private float spaceBetweenSquares = 2.5f;
     private float minValueX = -3.75f; //  x value of the center of the left-most square
     private float minValueY = -3.75f; //  y value of the center of the bottom-most square
-    
+
     // Start the game, remove title screen, reset score, and adjust spawnRate based on difficulty button clicked
     public void StartGame(int difficulty)
     {
@@ -45,8 +47,13 @@ public class GameManagerX : MonoBehaviour
             {
                 Instantiate(targetPrefabs[index], RandomSpawnPosition(), targetPrefabs[index].transform.rotation);
             }
-            
+
         }
+    }
+
+    void Update()
+    {
+        if (isGameActive) { UpdateTimer(); }
     }
 
     // Generate a random spawn position based on a random index from 0 to 3
@@ -70,7 +77,17 @@ public class GameManagerX : MonoBehaviour
     public void UpdateScore(int scoreToAdd)
     {
         score += scoreToAdd;
-        scoreText.text = "score: " + score;
+        scoreText.text = "Score: " + score;
+    }
+    public void UpdateTimer()
+    {
+        timeLeft -= Time.deltaTime;
+        timerText.text = "Timer: " + Mathf.Round(timeLeft);
+
+        if (timeLeft <= 0.0f)
+        {
+            GameOver();
+        }
     }
 
     // Stop game, bring up game over text and restart button
