@@ -12,6 +12,8 @@
 |Programmer Pathway - Prototype 2 (Challenge)|![propath_proto2_fetch](assets/propath_proto2_fetch.gif)|
 |Programmer Pathway - Prototype 3|![propath_proto3_jump](assets/propath_proto3_jump.gif)|
 |Programmer Pathway - Prototype 3 (Challenge)|![propath_proto3_balloon](assets/propath_proto3_balloon.gif)|
-|Programmer Pathway - Prototype 4|![propath_proto3_jump](assets/propath_proto4_ball.gif)|
+|Programmer Pathway - Prototype 4|![propath_proto4_ball](assets/propath_proto4_ball.gif)|
 |Programmer Pathway - Prototype 4 (Challenge)|![propath_proto4_soccer](assets/propath_proto4_soccer.gif)|
+|Programmer Pathway - Prototype 5|![propath_proto5_catch_all](assets/propath_proto5_catch_all.gif)|
+|Programmer Pathway - Prototype 5 (Challenge)|![propath_proto4_soccer](assets/propath_proto5_whack.gif)|
 |Mod the Cube|![mod_the_cube](assets/mod_the_cube.gif)|
