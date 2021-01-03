@@ -14,7 +14,6 @@ public class GameManagerX : MonoBehaviour
     public Button restartButton;
 
     public List<GameObject> targetPrefabs;
-
     private int score;
     private float spawnRate = 1.5f;
     public bool isGameActive;
