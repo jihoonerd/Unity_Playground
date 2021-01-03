@@ -2,17 +2,39 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player
 {
-    // Start is called before the first frame update
-    void Start()
+    //Member variables can be referred to as fields.
+    private int experience;
+
+    //Experience is a basic property
+    public int Experience
     {
-        
+        get
+        {
+            //Some other code
+            return experience;
+        }
+        set
+        {
+            //Some other code
+            experience = value;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    //Level is a property that converts experience
+    //points into the level of a player automatically
+    public int Level
     {
-        
+        get
+        {
+            return experience / 1000;
+        }
+        set
+        {
+            experience = value * 1000;
+        }
     }
+
+    public int Health { get; set; }
 }
