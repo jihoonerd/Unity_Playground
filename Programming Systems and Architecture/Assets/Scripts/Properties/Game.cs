@@ -12,7 +12,7 @@ public class Game : MonoBehaviour
         //Properties can be used just like variables
         myPlayer.Experience = 5;
         int x = myPlayer.Experience;
-        Debug.Log(x);     
+        Debug.Log(x);
     }
 
     // Update is called once per frame

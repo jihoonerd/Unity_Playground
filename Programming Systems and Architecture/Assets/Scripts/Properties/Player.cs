@@ -6,6 +6,12 @@ public class Player
 {
     //Member variables can be referred to as fields.
     private int experience;
+    public static int playerCount = 0;
+
+    void Start()
+    {
+        playerCount++;
+    }
 
     //Experience is a basic property
     public int Experience
