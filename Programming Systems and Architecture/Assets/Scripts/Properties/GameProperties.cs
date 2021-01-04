@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Game : MonoBehaviour
+public class GameProperties : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        Player myPlayer = new Player();
+        PlayerProperties myPlayer = new PlayerProperties();
 
         //Properties can be used just like variables
         myPlayer.Experience = 5;

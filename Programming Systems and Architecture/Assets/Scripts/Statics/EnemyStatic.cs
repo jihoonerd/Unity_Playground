@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy
+public class EnemyStatic
 {
     //Static variables are shared across all instances of a class.
     public static int enemyCount = 0;
-
-    public Enemy()
+    public EnemyStatic()
     //Be aware that constructor is a method whose name is the same as the name of its type.
     //Following is a constructor. 
     {

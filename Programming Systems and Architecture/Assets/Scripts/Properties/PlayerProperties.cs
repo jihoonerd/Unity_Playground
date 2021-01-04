@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player
+public class PlayerProperties
 {
     //Member variables can be referred to as fields.
     private int experience;
