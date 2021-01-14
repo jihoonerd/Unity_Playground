@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Avatar : MonoBehaviourm, IKillable, IDamageable<float>
+public class Avatar : MonoBehaviour, IKillable, IDamageable<float>
 {
     public void Kill()
     {
